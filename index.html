@@ -1,0 +1,307 @@
+<html>
+<head>
+  <title>Case Study: Google Lens V/S DoodleNet</title>
+  <link rel="icon" href="Case Study - Google Lens V-S DoodleNet Logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,900&display=swap" rel="stylesheet">
+</head>
+<body style="background: linear-gradient(white 0%, #fff2f2 100%); font-family: 'Barlow', sans-serif;">
+<center>
+    <img style="margin-top: 10px; width: 100px; height: 100px; border-radius: 100px; border: 2px solid #d9534f; margin-right: 5px;" src="Case Study - Google Lens V-S DoodleNet Logo.gif">
+  <hr>
+  <div class="bg-danger" class="bg-success achieve-head" style=" " data-toggle="collapse" data-target="#img1">
+    <h4 class="text-danger">3x2 Red Lego Brick</h4><i class="fa fa-sort-desc"></i>
+</div>
+<div id="img1" class="collapse">
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+        <img class="img-responsive img-thumbnail" src="3x2 Red Lego Brick.jpg">
+    </div>
+    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+        <h5 class="text-danger">
+            <b>Google Lens - </b>
+            <span></span>
+        </h5>
+        <hr>
+        <h5 class="text-danger">
+          <b>MobileNet - </b>
+          <span></span>
+      </h5>
+      <hr>
+      <div class="mini-result">
+          <h4 class="text-danger">Result - </h4>
+          <h4 class="text-danger"></h4>
+      </div>
+      <div class="mini-verdict">
+          <h4 class="text-danger">Verdict - </h4>
+          <h4 class="text-danger"></h4>
+      </div>
+    </div>
+</div>
+<div class="bg-danger" data-toggle="collapse" data-target="#img2">
+    <h4 class="text-danger">Alice 0.96 mm Thick Guitar Plectrum/Pick</h4><i class="fa fa-sort-desc"></i>
+</div>
+<div id="img2" class="collapse">
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+        <img class="img-responsive img-thumbnail" src="Alice 0.96 mm Thick Guitar Plectrum-Pick.jpg">
+    </div>
+    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+        <h5 class="text-danger">
+            <b>Google Lens - </b>
+            <span></span>
+        </h5>
+        <hr>
+        <h5 class="text-danger">
+          <b>MobileNet - </b>
+          <span></span>
+      </h5>
+      <hr>
+      <div class="mini-result">
+          <h4 class="text-danger">Result - </h4>
+          <h4 class="text-danger"></h4>
+      </div>
+      <div class="mini-verdict">
+          <h4 class="text-danger">Verdict - </h4>
+          <h4 class="text-danger"></h4>
+      </div>
+    </div>
+</div>
+<div class="bg-danger" data-toggle="collapse" data-target="#img3">
+    <h4 class="text-danger">Cadenza 6 String Acoustic Guitar</h4><i class="fa fa-sort-desc"></i>
+</div>
+<div id="img3" class="collapse">
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+        <img class="img-responsive img-thumbnail" src="Cadenza 6 String Acoustic Guitar.jpg">
+    </div>
+    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+        <h5 class="text-danger">
+            <b>Google Lens - </b>
+            <span></span>
+        </h5>
+        <hr>
+        <h5 class="text-danger">
+          <b>MobileNet - </b>
+          <span></span>
+      </h5>
+      <hr>
+      <div class="mini-result">
+          <h4 class="text-danger">Result - </h4>
+          <h4 class="text-danger"></h4>
+      </div>
+      <div class="mini-verdict">
+          <h4 class="text-danger">Verdict - </h4>
+          <h4 class="text-danger"></h4>
+      </div>
+    </div>
+</div>
+<div class="bg-danger" data-toggle="collapse" data-target="#img4">
+    <h4 class="text-danger">Classmate Smoothie Fountain Cartridge Pen</h4><i class="fa fa-sort-desc"></i>
+</div>
+<div id="img4" class="collapse">
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+        <img class="img-responsive img-thumbnail" src="Classmate Smoothie Fountain Cartridge Pen.jpg">
+    </div>
+    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+        <h5 class="text-danger">
+            <b>Google Lens - </b>
+            <span></span>
+        </h5>
+        <hr>
+        <h5 class="text-danger">
+          <b>MobileNet - </b>
+          <span></span>
+      </h5>
+      <hr>
+      <div class="mini-result">
+          <h4 class="text-danger">Result - </h4>
+          <h4 class="text-danger"></h4>
+      </div>
+      <div class="mini-verdict">
+          <h4 class="text-danger">Verdict - </h4>
+          <h4 class="text-danger"></h4>
+      </div>
+    </div>
+</div>
+<div class="bg-danger" data-toggle="collapse" data-target="#img5">
+    <h4 class="text-danger">Faber-Castle 6B Pencil</h4><i class="fa fa-sort-desc"></i>
+</div>
+<div id="img5" class="collapse">
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+        <img class="img-responsive img-thumbnail" src="Faber-Castle 6B Pencil.jpg">
+    </div>
+    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+        <h5 class="text-danger">
+            <b>Google Lens - </b>
+            <span></span>
+        </h5>
+        <hr>
+        <h5 class="text-danger">
+          <b>MobileNet - </b>
+          <span></span>
+      </h5>
+      <hr>
+      <div class="mini-result">
+          <h4 class="text-danger">Result - </h4>
+          <h4 class="text-danger"></h4>
+      </div>
+      <div class="mini-verdict">
+          <h4 class="text-danger">Verdict - </h4>
+          <h4 class="text-danger"></h4>
+      </div>
+    </div>
+</div>
+<div class="bg-danger" data-toggle="collapse" data-target="#img6">
+    <h4 class="text-danger">Faber-Castle Zig-Zag Scissors</h4><i class="fa fa-sort-desc"></i>
+</div>
+<div id="img6" class="collapse">
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+        <img class="img-responsive img-thumbnail" src="Faber-Castle Zig-Zag Scissors.jpg">
+    </div>
+    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+        <h5 class="text-danger">
+            <b>Google Lens - </b>
+            <span></span>
+        </h5>
+        <hr>
+        <h5 class="text-danger">
+          <b>MobileNet - </b>
+          <span></span>
+      </h5>
+      <hr>
+      <div class="mini-result">
+          <h4 class="text-danger">Result - </h4>
+          <h4 class="text-danger"></h4>
+      </div>
+      <div class="mini-verdict">
+          <h4 class="text-danger">Verdict - </h4>
+          <h4 class="text-danger"></h4>
+      </div>
+    </div>
+</div>
+<div class="bg-danger" data-toggle="collapse" data-target="#img6">
+    <h4 class="text-danger">Logitech Gray Computer Mouse</h4><i class="fa fa-sort-desc"></i>
+</div>
+<div id="img6" class="collapse">
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+        <img class="img-responsive img-thumbnail" src="Logitech Gray Computer Mouse.jpg">
+    </div>
+    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+        <h5 class="text-danger">
+            <b>Google Lens - </b>
+            <span></span>
+        </h5>
+        <hr>
+        <h5 class="text-danger">
+          <b>MobileNet - </b>
+          <span></span>
+      </h5>
+      <hr>
+      <div class="mini-result">
+          <h4 class="text-danger">Result - </h4>
+          <h4 class="text-danger"></h4>
+      </div>
+      <hr>
+      <div class="mini-verdict">
+          <h4 class="text-danger">Verdict - </h4>
+          <h4 class="text-danger"></h4>
+      </div>
+    </div>
+</div>
+<div class="bg-danger" data-toggle="collapse" data-target="#img6">
+    <h4 class="text-danger">Nataraj Black Pencil Sharpener</h4><i class="fa fa-sort-desc"></i>
+</div>
+<div id="img6" class="collapse">
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+        <img class="img-responsive img-thumbnail" src="Nataraj Black Pencil Sharpener.jpg">
+    </div>
+    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+        <h5 class="text-danger">
+            <b>Google Lens - </b>
+            <span></span>
+        </h5>
+        <hr>
+        <h5 class="text-danger">
+          <b>MobileNet - </b>
+          <span></span>
+      </h5>
+      <hr>
+      <div class="mini-result">
+          <h4 class="text-danger">Result - </h4>
+          <h4 class="text-danger"></h4>
+      </div>
+      <div class="mini-verdict">
+          <h4 class="text-danger">Verdict - </h4>
+          <h4 class="text-danger"></h4>
+      </div>
+    </div>
+</div>
+<div class="bg-danger" data-toggle="collapse" data-target="#img6">
+    <h4 class="text-danger">Torch/Flashlight</h4><i class="fa fa-sort-desc"></i>
+</div>
+<div id="img6" class="collapse">
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+        <img class="img-responsive img-thumbnail" src="Torch-Flashlight.jpg">
+    </div>
+    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+        <h5 class="text-danger">
+            <b>Google Lens - </b>
+            <span></span>
+        </h5>
+        <hr>
+        <h5 class="text-danger">
+          <b>MobileNet - </b>
+          <span></span>
+      </h5>
+      <hr>
+      <div class="mini-result">
+          <h4 class="text-danger">Result - </h4>
+          <h4 class="text-danger"></h4>
+      </div>
+      <div class="mini-verdict">
+          <h4 class="text-danger">Verdict - </h4>
+          <h4 class="text-danger"></h4>
+      </div>
+        </p>
+    </div>
+</div>
+<div class="bg-danger" data-toggle="collapse" data-target="#img6">
+    <h4 class="text-danger">Yellow Eraser</h4><i class="fa fa-sort-desc"></i>
+</div>
+<div id="img6" class="collapse">
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+        <img class="img-responsive img-thumbnail" src="Yellow Eraser.jpg">
+    </div>
+    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+        <h5 class="text-danger">
+            <b>Google Lens - </b>
+            <span></span>
+        </h5>
+        <hr>
+        <h5 class="text-danger">
+          <b>MobileNet - </b>
+          <span></span>
+      </h5>
+      <hr>
+      <div class="mini-result">
+          <h4 class="text-danger">Result - </h4>
+          <h4 class="text-danger"></h4>
+      </div>
+      <div class="mini-verdict">
+          <h4 class="text-danger">Verdict - </h4>
+          <h4 class="text-danger"></h4>
+      </div>
+        </p>
+    </div>
+</div>
+</center>
+<div class="copy_right_footer text-danger" style="position: fixed; bottom: 0; width: 100%; line-height: 3; text-align: center;">
+  Developed By RKcooldude10D5
+</div>
+<script src="main.js"></script>
+</body>
+</html>
